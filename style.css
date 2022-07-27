@@ -1,3 +1,4 @@
+/*lembrar de sempre resetar os estilos iniciais*/
 * {
     padding: 0;
     margin: 0;
@@ -40,7 +41,7 @@ body {
     display: flex;
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
-    flex-direction: column;
+    flex-direction: column;/*deu uma girada no eixo*/
     width: 50%;
     min-height: 34rem;
 }
@@ -56,6 +57,7 @@ body {
     border: 1px solid lightgray;
 }
 
+/*há duas childs na classe group, o 1 pega a primeira*/
 .group:nth-child(1) {
     min-height: 19rem;
 }
@@ -68,8 +70,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
+    border-radius: 50%; /*a imagem fica redondinha*/
+    overflow: hidden; /*o que passar da div é escondido*/
 }
 
 .profile-photo img {
@@ -79,7 +81,7 @@ body {
 .instagram-login {
     background-color: #0095f6;
     color: #ffffff;
-    padding: 8px;
+    padding: 8px;/*aumentei a caixa*/
     border-radius: 4px;
 }
 
@@ -118,7 +120,7 @@ body {
     width: 10rem;
     background-size: cover;
 }
-
+/*separei a div pela metade e coloquei um link. Depois, coloquei uma imagem de fundo nas metades*/
 .app-download:nth-child(1) {
     background-image: url('./img/apple-button.png');
 }
@@ -129,13 +131,14 @@ body {
 
 /* media queries */
 
-
+/*quando a tela tiver até 1024 pixels...*/
 @media (max-width: 1024px) {
     .instagram-wrapper {
         width: 90%;
     }
 }
-
+/*se a tela for maior que 650 pixels...*/
+/*tiro a imagem do celular e deixo só o continue*/
 @media (max-width: 650px) {
     body {
         background-color: #ffffff;
