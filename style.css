@@ -24,6 +24,7 @@ body {
     justify-content: start;
     width: 60%;
     height: 100vh;
+    padding-top: 50px;
 }
 
 .instagram-phone {
@@ -38,11 +39,12 @@ body {
 }
 
 .instagram-continue {
+    padding-top: 100px;
     display: flex;
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
     flex-direction: column;/*deu uma girada no eixo*/
-    width: 50%;
+    width: 47%;
     min-height: 34rem;
 }
 
@@ -55,47 +57,59 @@ body {
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
+   
 }
 
 /*há duas childs na classe group, o 1 pega a primeira*/
 .group:nth-child(1) {
     min-height: 19rem;
+    border-bottom: none;
+}
+
+.group:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: none;
 }
 
 .instagram-logo {
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .profile-photo {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /*a imagem fica redondinha*/
+    
     overflow: hidden; /*o que passar da div é escondido*/
+    padding: 20px;
 }
 
 .profile-photo img {
-    height: 6rem;
+    height: 8rem;
+    border-radius: 50%; /*a imagem fica redondinha*/
 }
 
 .instagram-login {
     background-color: #0095f6;
     color: #ffffff;
-    padding: 8px;/*aumentei a caixa*/
+    padding: 8px 25px;/*aumentei a caixa*/
     border-radius: 4px;
 }
 
-.instagram-logout {
-    color: #0095f6;
-    margin-top: 1rem;
-}
 
 .not-account {
-    color: rgb(160, 160, 160);
+    color: #0095f6 ;
 }
 
+.nao{
+    padding: 0.5rem;
+    align-items: center;
+}
 .link-blue {
-    color: #0095f6;
+    color: rgb(160, 160, 160);
 }
 
 .get-the-app {
