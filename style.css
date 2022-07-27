@@ -34,7 +34,7 @@ body {
 }
 
 .instagram-phone img {
-    height: 50rem;
+    height: 32rem;
 }
 
 .instagram-continue {
@@ -139,7 +139,7 @@ body {
 }
 /*se a tela for maior que 650 pixels...*/
 /*tiro a imagem do celular e deixo só o continue*/
-@media (max-width: 650px) {
+@media (max-width: 800px) {
     body {
         background-color: #ffffff;
     }
